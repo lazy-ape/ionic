@@ -226,7 +226,7 @@ export class App {
             return Promise.resolve();
           }
 
-        } else if (isNav(nav) && nav.length() > 1) {
+        } else if (isNav(nav) && nav.length() >= 1) {
           // this nav controller has more than one view
           // pop the current view on this nav and we're done here
           console.debug('app, goBack pop nav');
